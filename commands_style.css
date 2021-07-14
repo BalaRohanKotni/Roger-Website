@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+.header {
+  height: 11.5vh;
+  background-color: #283149;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  position: fixed;
+  margin-top: 0;
+  width: 100%;
+}
+
+.header-li:first-child {
+  margin-left: 30px;
+}
+
+.header-li:last-child {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+#bot_logo {
+  height: 4pc;
+}
+
+.page_container {
+  color: white;
+  margin-top: 11.5vh;
+  min-height: 88.5vh;
+  width: 100vw;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.collapsible {
+  width: 96vw;
+  margin: 1vw;
+  padding: 1vw;
+  margin-bottom: 0;
+  background: #333;
+}
+
+.collapsible-button {
+  width: 95vw;
+  text-align: left;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  background: #333;
+}
+
+.collapsible-text {
+  width: 94vw;
+  max-height: 0;
+  background: #333;
+  color: white;
+  transition: max-height 0.5s;
+  overflow: hidden;
+  padding: 1vw;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-top: 1vh;
+}
+
+.collapsible-text h3 {
+  font-family: "Roboto Slab";
+}
+
+.collapsible-text * {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.collapsible-button:focus + .collapsible-text {
+  max-height: 300px;
+  background: #555;
+}

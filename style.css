@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+.header {
+  height: 11.5vh;
+  background-color: #283149;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  position: fixed;
+  margin-top: 0;
+  width: 100%;
+}
+
+.header-li:first-child {
+  margin-left: 30px;
+}
+
+.header-li:last-child {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+#bot_logo {
+  height: 4pc;
+}
+
+.page_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 11.5vh;
+  min-height: 88.5vh;
+  width: 100vw;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.content {
+  width: 50vw;
+  animation-name: content_anim;
+  animation-duration: 2s;
+}
+
+@keyframes content_anim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#roger_logo {
+  height: 8pc;
+  animation-name: roger_logo_anim;
+  animation-duration: 2s;
+}
+
+#roger_headtext {
+  font-size: 50px;
+}
